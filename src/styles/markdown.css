@@ -1,3 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .link {
+        @apply text-blue-500 underline hover:text-blue-700; /* ou le style souhaité */
+    }
+
+    .btn-regular-dark {
+        @apply flex items-center justify-center bg-[oklch(0.45_0.01_var(--hue))] hover:bg-[oklch(0.50_0.01_var(--hue))] active:bg-[oklch(0.55_0.01_var(--hue))] dark:bg-[oklch(0.30_0.02_var(--hue))] dark:hover:bg-[oklch(0.35_0.03_var(--hue))] dark:active:bg-[oklch(0.40_0.03_var(--hue))];
+    }
+}
+
 .custom-md {
     h1 {
         @apply text-3xl;
