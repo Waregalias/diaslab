@@ -129,7 +129,7 @@ importers:
         specifier: ^0.64.0
         version: 0.64.0
       svelte:
-        specifier: ^5.39.8
+        specifier: ^5.43.2
         version: 5.43.2
       tailwindcss:
         specifier: ^3.4.19
@@ -1736,6 +1736,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@volar/kit@2.4.27':
     resolution: {integrity: sha512-ilZoQDMLzqmSsImJRWx4YiZ4FcvvPrPnFVmL6hSsIWB6Bn3qc7k88J9yP32dagrs5Y8EXIlvvD/mAFaiuEOACQ==}
@@ -2631,11 +2632,12 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   globals@15.15.0:
     resolution: {integrity: sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==}
@@ -4440,6 +4442,7 @@ packages:
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   terser@5.44.0:
     resolution: {integrity: sha512-nIVck8DK+GM/0Frwd+nIhZ84pR/BX7rmXMfYwyg+Sri5oGVE99/E3KvXqpC2xHFxyqXyGHTKBSioxxplrO4I4w==}
@@ -4716,8 +4719,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite@6.4.1:
-    resolution: {integrity: sha512-+Oxm7q9hDoLMyJOYfUYBuHQo+dkAloi33apOPP56pzj+vsdJDzr+j1NISE5pyaAuKL4A3UD34qd0lx5+kfKp2g==}
+  vite@6.4.2:
+    resolution: {integrity: sha512-2N/55r4JDJ4gdrCvGgINMy+HH3iRpNIz8K6SFwVsA+JbQScLiC+clmAxBgwiSPgcG9U15QmvqCGWzMbqda5zGQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -5087,12 +5090,12 @@ snapshots:
 
   '@astrojs/svelte@7.2.5(@types/node@24.9.2)(astro@5.15.9(@types/node@24.9.2)(jiti@1.21.7)(rollup@2.79.2)(stylus@0.64.0)(terser@5.44.0)(typescript@5.9.3)(yaml@2.8.2))(jiti@1.21.7)(stylus@0.64.0)(svelte@5.43.2)(terser@5.44.0)(typescript@5.9.3)(yaml@2.8.2)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.2)(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
+      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.2)(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
       astro: 5.15.9(@types/node@24.9.2)(jiti@1.21.7)(rollup@2.79.2)(stylus@0.64.0)(terser@5.44.0)(typescript@5.9.3)(yaml@2.8.2)
       svelte: 5.43.2
       svelte2tsx: 0.7.46(svelte@5.43.2)(typescript@5.9.3)
       typescript: 5.9.3
-      vite: 6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
+      vite: 6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -6479,25 +6482,25 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.2)(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)))(svelte@5.43.2)(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))':
+  '@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.2)(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)))(svelte@5.43.2)(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.2)(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
+      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.2)(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
       debug: 4.4.3
       svelte: 5.43.2
-      vite: 6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
+      vite: 6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.2)(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))':
+  '@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.2)(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.2)(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)))(svelte@5.43.2)(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
+      '@sveltejs/vite-plugin-svelte-inspector': 4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.2)(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)))(svelte@5.43.2)(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
       debug: 4.4.3
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.21
       svelte: 5.43.2
-      vite: 6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
-      vitefu: 1.1.1(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
+      vite: 6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
+      vitefu: 1.1.1(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -6911,8 +6914,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.17.2
       vfile: 6.0.3
-      vite: 6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
-      vitefu: 1.1.1(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
+      vite: 6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
+      vitefu: 1.1.1(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -10474,7 +10477,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2):
+  vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -10490,9 +10493,9 @@ snapshots:
       terser: 5.44.0
       yaml: 2.8.2
 
-  vitefu@1.1.1(vite@6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)):
+  vitefu@1.1.1(vite@6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)):
     optionalDependencies:
-      vite: 6.4.1(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
+      vite: 6.4.2(@types/node@24.9.2)(jiti@1.21.7)(stylus@0.64.0)(terser@5.44.0)(yaml@2.8.2)
 
   volar-service-css@0.0.68(@volar/language-service@2.4.27):
     dependencies:
