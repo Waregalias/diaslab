@@ -22,7 +22,7 @@ const postsCollection = defineCollection({
 const specCollection = defineCollection({
 	schema: z.object({}),
 });
-export const collections = {
+export const collections: Record<string, object> = {
 	posts: postsCollection,
 	spec: specCollection,
 };
