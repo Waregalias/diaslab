@@ -1,68 +1,23 @@
 ---
-title: "Artifact MMO : manette et clavier/souris, de l'idée brute au projet finalisé en vibe coding"
+title: "Artifact MMO : un controller gamepad fait maison"
 published: 2026-04-21
-description: Retour d'expérience sur mon projet Artifacts Gamepad Controller, entre implémentation manuelle et finalisation en vibe coding.
+description: Un petit outil perso pour jouer à Artifact MMO à la manette, construit en vibe coding.
 image: "./game.png"
 tags: [Artifact MMO, Gamepad, React, Next.js, Electron, API]
 category: Projects
 draft: false
 ---
 
-Artifact MMO est un MMORPG sandbox un peu à part: le jeu a été pensé pour les développeurs, avec un gameplay pilotable via API HTTP.
-Concrètement, chaque action de personnage correspond à un endpoint.  
+[Artifact MMO](https://artifactsmmo.com/) est un MMO où tout passe par une API HTTP — chaque action du personnage est un appel REST. C'est fun à scripter, mais j'avais envie d'une interface plus directe : brancher une manette et jouer "à la console" plutôt que de tout coder.
 
-C'est précisément ce qui m'a donné l'idée de ce projet: construire une interface "console-like" pour piloter mon personnage avec une manette et clavier/souris, en branchant des inputs gamepad sur les actions API du jeu.
+- Repo: [Waregalias/artifacts-gamepad](https://github.com/Waregalias/artifacts-gamepad)
+- Démo: [waregalias.github.io/artifacts-gamepad](https://waregalias.github.io/artifacts-gamepad/)
 
-- Projet: [Waregalias/artifacts-gamepad](https://github.com/Waregalias/artifacts-gamepad)
-- Implémentation locale actuelle: `artifacts-gamepad-controller`
-- Démo web: [waregalias.github.io/artifacts-gamepad](https://waregalias.github.io/artifacts-gamepad/)
+## Comment ça marche
 
-## Pourquoi faire un gamepad controller pour Artifact MMO
+L'app fait trois choses : lire la manette, mapper les boutons sur des actions de jeu, appeler l'API.
 
-Le jeu est excellent pour l'automatisation et les scripts, mais en pratique je voulais aussi une expérience plus immédiate:
-
-- appuyer sur un bouton pour agir
-- garder une boucle de jeu fluide
-- profiter de l'API sans friction
-
-L'objectif n'était pas de remplacer l'approche "code-first" d'Artifact MMO, mais de la rendre plus ergonomique au quotidien.
-
-## La progression du projet
-
-Le projet s'est construit en deux phases bien distinctes:
-
-1. Démarrage manuel:
-- structure de l'app
-- premières routes API
-- mapping des boutons et des directions
-- gestion des erreurs et des états
-
-2. Finalisation en vibe coding:
-- accélération des itérations
-- consolidation UI/UX
-- ajustements rapides sur les bindings et les flux d'action
-- passage à une version plus complète (web + desktop avec Electron)
-
-Cette combinaison a été super efficace: base solide d'abord, vitesse d'exécution ensuite.
-
-## Stack technique
-
-Le contrôleur repose sur:
-
-- Next.js + React + TypeScript
-- `react-gamepads` pour capter les entrées manette et clavier/souris
-- Zustand pour l'état global
-- Electron pour le mode desktop
-
-## Le coeur technique: input -> action -> API
-
-L'app fait essentiellement trois choses:
-
-1. Lire l'état de la manette et clavier/souris
-2. Mapper les inputs vers des actions métier (fight, rest, move, etc.)
-3. Appeler l'API Artifact MMO puis rafraîchir l'état du personnage
-
-### 1) Mapping des boutons du contrôleur
+**Mapping des boutons physiques :**
 
 ```ts
 export const controllerToGamePadSVG: Model = {
@@ -70,43 +25,15 @@ export const controllerToGamePadSVG: Model = {
   '1': 'buttonRight',
   '2': 'buttonLeft',
   '3': 'buttonUp',
-  '4': 'TriggerFrontLeft',
-  '5': 'TriggerFrontRight',
-  '6': 'TriggerBackLeft',
-  '7': 'TriggerBackRight',
-  '8': 'select',
-  '9': 'start',
   '12': 'directionUp',
   '13': 'directionDown',
   '14': 'directionLeft',
   '15': 'directionRight',
+  // ...
 }
 ```
 
-Cette table sert de point d'ancrage entre l'index physique des boutons et les actions lisibles côté app.
-
-### 2) Stabiliser les entrées avec un délai court
-
-```ts
-const pressedButtons = Object.entries(currentButtonsClicked)
-  .filter(([, isPressed]) => isPressed)
-  .map(([button]) => button);
-
-if (pressedButtons.length > 0) {
-  if (timerRef.current) {
-    clearTimeout(timerRef.current);
-  }
-  timerRef.current = setTimeout(() => {
-    gamePadEvent(currentButtonsClicked);
-  }, 200);
-} else {
-  gamePadEvent(currentButtonsClicked);
-}
-```
-
-Ce mini debounce limite les doubles déclenchements non désirés et garde un comportement propre en jeu.
-
-### 3) Mapping des boutons vers les actions Artifact MMO
+**Actions de jeu :**
 
 ```ts
 export const ArtifactActionButtonMap = {
@@ -117,21 +44,9 @@ export const ArtifactActionButtonMap = {
 } as const;
 ```
 
-Les directions sont traitées à part pour le déplacement:
+Un debounce de 200ms évite les doubles déclenchements, et les directions du stick gèrent les déplacements sur la map via des coordonnées x/y.
 
-```ts
-export enum ArtifactActionMoveX {
-  directionLeft = -1,
-  directionRight = 1,
-}
-
-export enum ArtifactActionMoveY {
-  directionUp = -1,
-  directionDown = 1,
-}
-```
-
-### 4) Déclenchement des requêtes API
+**Appel API :**
 
 ```ts
 export const move = async (
@@ -150,32 +65,16 @@ export const move = async (
       'Authorization': `Bearer ${apiKey}`,
     },
     body: `{"x":${fx + dx},"y":${fy + dy}}`,
-  })
-    .then(res => res.json())
+  }).then(res => res.json())
     .then(json => {
-      if (json.error) {
-        throw new Error(json.error.message, json.error.code);
-      }
+      if (json.error) throw new Error(json.error.message);
       return json.data;
     });
 }
 ```
 
-Même principe pour `rest`, `fight`, `gathering` et `transition`.
+## Stack
 
-## Ce que j'en retiens
+Next.js + React + TypeScript, `react-gamepads` pour les inputs, Zustand pour l'état, Electron pour la version desktop.
 
-Ce projet m'a confirmé deux choses:
-
-- Artifact MMO est une excellente base pour créer des interfaces de jeu personnalisées.
-- Le duo "démarrage manuel + finalisation en vibe coding" est redoutablement efficace.
-
-Le manuel m'a permis d'ancrer la logique correctement.
-Le vibe coding m'a permis d'aller beaucoup plus vite sur la finition, l'ergonomie et les itérations.
-
-Au final, j'ai une app qui reste fidèle à l'esprit API d'Artifact MMO, mais avec une prise en main beaucoup plus naturelle à la manette et clavier/souris.
-
-## Sources
-
-- Documentation Artifact MMO: [docs.artifactsmmo.com](https://docs.artifactsmmo.com/)
-- Repository du projet: [github.com/Waregalias/artifacts-gamepad](https://github.com/Waregalias/artifacts-gamepad)
+Le projet a démarré à la main (structure, routing, gestion des états), puis j'ai accéléré la finition en vibe coding. Ça marche bien pour ce genre de chose : poser les bases soi-même, laisser l'AI finir le boulot répétitif.
