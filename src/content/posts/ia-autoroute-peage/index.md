@@ -1,7 +1,7 @@
 ---
-title: "L'IA n'est pas le nouvel Internet — c'est une autoroute à péage"
+title: "L'IA générative : une révolution… pour les actionnaires"
 published: 2026-06-16
-description: "Derrière la promesse révolutionnaire de l'IA, une mécanique économique et politique bien rodée — et déjà vue ailleurs."
+description: "On nous vend l'IA comme un bien commun. C'est un péage privé. Reste à savoir qui tient la barrière — et combien il fera payer le passage."
 image: "./cover.jpeg"
 tags: [IA, Tech, Anthropic, Économie, Politique]
 category: Opinion
@@ -9,54 +9,50 @@ lang: fr
 draft: false
 ---
 
-On nous a vendu le même film deux fois. Dans les années 90, Internet est arrivé comme une promesse de bien commun — protocoles ouverts, infrastructure décentralisée, n'importe qui pouvait monter un serveur depuis chez soi. Le Web lui-même est né dans un labo du CERN, sur des protocoles que personne n'a cherché à breveter. L'IA générative arrive avec le même discours : démocratisation, accès universel, révolution pour tous. La structure économique sous-jacente, elle, n'a strictement rien à voir.
+Une autoroute, ça ressemble à un service public : large, rapide, ouvert à tous. Sauf qu'au péage, ce n'est pas l'État que vous payez, mais des groupes privés à qui on a vendu les clés d'un réseau financé par l'argent public.
 
-Ce n'est pas une route nationale. C'est une autoroute privée. Et le péage est encore attractif — précisément parce qu'il s'agit de créer une dépendance avant que les barrières soient levées en bourse.
+L'IA générative, c'est exactement ça, en accéléré. On nous la vend comme un bien commun. C'est un péage privé. Une poignée d'entreprises a construit la route, posé les barrières, et s'apprête à fixer le prix du passage. Une révolution, d'accord — mais pour qui ?
 
-## Ce scénario a déjà eu lieu
+## Pas un marché, un club fermé
 
-Le chemin de fer, l'électricité, le téléphone : chaque grande technologie disruptive a suivi le même arc. Promesse de libération collective, construction d'infrastructure privée à coups de capitaux massifs, monopoles de fait, puis — parfois — intervention régulatrice tardive. L'IA suit ce chemin, mais à une vitesse sans précédent et dans un contexte politique où réguler est systématiquement présenté comme un frein à l'innovation.
+Regardez qui tient le volant. Microsoft a mis des dizaines de milliards dans OpenAI — et lui revend ensuite l'hébergement de ses serveurs. Google et Amazon ont financé Anthropic — sur leurs propres infrastructures. Les mêmes entreprises sont à la fois investisseurs, fournisseurs et premiers clients des modèles qu'elles financent. L'argent tourne en rond, entre les mêmes mains.
 
-Jim Covello (Goldman Sachs, 2024) l'a formulé clairement : les barrières à l'entrée — GPU, data centers, énergie — sont d'une nature différente de tout ce que le numérique a connu. Personne n'entraîne un frontier model depuis chez soi. La valeur ne se redistribue pas. Elle s'accumule.
+Et puis il y a Nvidia, qui fabrique les GPU, ces puces sans lesquelles aucun modèle ne tourne. Nvidia vend les pelles à tous les chercheurs d'or, et prend en plus des parts dans leurs mines. Peu importe qui gagne la ruée : elle encaisse à tous les coups. Et quand les États sortent le carnet de chèques — des dizaines de milliards d'argent public pour soutenir la filière — ce sont encore ces mêmes géants privés qui ramassent la mise.
 
-Pendant ce temps, les États jouent le jeu. Le CHIPS Act américain injecte des dizaines de milliards de dollars dans la filière semi-conducteurs — au bénéfice principal de Nvidia et TSMC, entreprises privées dont les actionnaires empochent. L'AI Act européen, censé réguler le secteur, a été méthodiquement édulcoré sous la pression des lobbies technologiques avant même d'entrer en application. La capture réglementaire n'est pas un risque à venir — c'est un fait accompli.
+Ça ne ressemble pas à un marché ouvert. Ça ressemble à un club où l'on s'invite entre soi, porte fermée pour les autres.
 
-## Un circuit fermé, amplifié par les médias
+## Anthropic, ou la « gentille » qui installe son péage
 
-Microsoft dans OpenAI, Google et Amazon dans Anthropic, Nvidia dans tout le monde. Les mêmes entreprises sont simultanément actionnaires, fournisseurs d'infrastructure et premiers clients des modèles qu'elles financent. Nvidia vend les pelles à tous les chercheurs d'or et prend des parts dans leurs mines — peu importe qui gagne la course, elle encaisse.
+L'exemple le plus parlant, c'est Anthropic. On nous l'avait vendue différente : l'alternative éthique, prudente, soucieuse de l'intérêt général. Deux ans plus tard, elle se comporte comme les autres, à la veille d'entrer en bourse.
 
-Ce circuit ne tient que par la narration qui l'entoure. Les médias — Time en couverture, tribunes en édito — amplifient le discours révolutionnaire sans jamais interroger les modèles économiques sous-jacents. La couverture médiatique de l'IA est, dans sa grande majorité, de la communication financière non identifiée comme telle. Elle sert les valorisations boursières, pas la compréhension publique.
+À partir de juin 2026, l'abonnement classique ne couvre plus l'usage automatisé : si vous faites tourner des scripts ou des agents, vous basculez vers un système de crédits payants, à la consommation. Les outils tiers qui permettaient de passer par la petite porte ont été coupés un à un. Et quand le modèle Fable 5 a été fermé du jour au lendemain sur décision du gouvernement américain, tout le monde a compris une chose : votre outil de travail peut disparaître sans préavis, pour des raisons qui n'ont rien à voir avec vous.
 
-La recherche académique elle-même n'y échappe pas. Google finance des chaires à Stanford, Microsoft des laboratoires au MIT. Les universités qui forment les chercheurs de demain dépendent des dons des acteurs dont elles sont censées évaluer les pratiques. L'indépendance intellectuelle sur le sujet est structurellement compromise avant même que la question soit posée.
+Pendant ce temps, Anthropic signe pour 200 millions de dollars de contrats avec l'armée américaine et réserve ses modèles les plus puissants à des clients triés sur le volet, au nom de la « sécurité ». L'éthique, c'était le ticket d'entrée. Les contrats d'État, c'est le vrai business.
 
-## Le coût environnemental qu'on ne comptabilise pas
+## On nous avait promis Internet
 
-L'angle que le discours révolutionnaire préfère éviter : l'IA générative est une industrie physique, avec une empreinte matérielle massive. Un seul entraînement de grand modèle de langage consomme autant d'électricité qu'une ville de plusieurs dizaines de milliers d'habitants pendant des semaines. Microsoft et Google rachètent des centrales nucléaires pour alimenter leurs data centers — non par conviction écologique, mais par nécessité industrielle.
+On a déjà entendu cette chanson. Dans les années 90, Internet aussi devait changer le monde — et il l'a fait. Mais Internet reposait sur des standards ouverts, gratuits, que personne ne possédait. Le web est né dans un laboratoire de recherche public européen, et n'importe qui pouvait lancer un site depuis sa chambre. Résultat : des millions d'emplois, une révolution culturelle, et oui, quelques milliardaires au passage.
 
-Le greenwashing suit, immanquablement. Les rapports de développement durable parlent d'"optimisation énergétique" et d'"IA verte" pendant que la consommation totale du secteur explose — l'effet Jevons appliqué au calcul : plus les modèles sont efficaces, plus on en déploie, et plus la consommation globale augmente.
+L'IA, c'est l'inverse. Jim Covello, le responsable de la recherche actions chez Goldman Sachs — l'une des plus grosses banques d'investissement de la planète — l'a résumé dès 2024 : cette fois, les barrières à l'entrée sont d'une autre nature. Il faut des milliards en puces, en centres de données et en électricité avant de produire quoi que ce soit. Personne n'entraîne un modèle de pointe depuis sa chambre. La valeur ne se diffuse pas dans l'économie. Elle se concentre.
 
-À cela s'ajoute la question des matières premières. Les GPU nécessitent du cobalt, du lithium, des terres rares extraits dans des conditions documentées comme problématiques — République démocratique du Congo, Chine, Chili. Cette chaîne d'approvisionnement n'apparaît dans aucun discours sur la révolution technologique. Elle reste soigneusement hors cadre.
+Et les fameux gains de productivité ? Pour l'instant, ils sont modestes, et concentrés là où il y a déjà de l'argent — la finance, la tech, le marketing — pas dans les hôpitaux ou les écoles. Et quand l'efficacité augmente, elle ne réduit pas le temps de travail : elle remplit les poches des actionnaires. Le gain se transforme en licenciements, pas en jours de repos (toute proportion gardée, bien sûr : les plus grosses vagues de licenciements récentes ne sont pas, pour l'essentiel, liées à l'IA). Quant aux valorisations à plusieurs dizaines de milliards d'Anthropic ou de Mistral : elles reposent sur des promesses, pas sur des bénéfices. Ce sont des paris. Le marché le sait, et continue quand même.
 
-## Le cas Anthropic
+## La facture qu'on ne vous montre pas
 
-Anthropic en est l'illustration la plus nette, parce qu'on nous l'avait promise différente. L'"alternative éthique" à OpenAI adopte aujourd'hui les réflexes d'une Big Tech en pré-IPO : suppression du flat-rate pour les usages automatisés dès juin 2026, éviction progressive des outils tiers, passage forcé par les interfaces propriétaires où chaque interaction est monétisable et traçable en vue de la cotation. Fable 5 a récemment été fermé sur décision gouvernementale — preuve qu'un modèle jugé indispensable peut disparaître du jour au lendemain pour des raisons extérieures à la technologie, et que la notion de "service fiable" n'a aucun sens juridique dans ce secteur.
+Il y a un coût dont personne ne parle dans les conférences enthousiastes : celui de l'énergie. Entraîner un grand modèle consomme autant d'électricité qu'une ville de plusieurs dizaines de milliers d'habitants pendant des semaines. Microsoft et Google en sont à racheter des centrales nucléaires pour alimenter leurs centres de données — pas par amour de l'atome, par nécessité.
 
-En parallèle : 200 millions de dollars de contrats avec le Département de la Défense américain, 300 mégawatts et 220 000 GPU accaparés. Le discours sur la "sécurité de l'IA" — justification principale pour ne pas publier les modèles en open source — sert surtout à réserver les capacités les plus avancées aux partenaires gouvernementaux et militaires sélectionnés. L'éthique était le ticket d'entrée. Les contrats d'État sont le modèle économique.
+Et pendant que les rapports parlent d'« IA verte » et d'« optimisation », la consommation totale, elle, explose : plus les modèles deviennent efficaces, plus on les utilise, plus on en construit. Sans compter les puces elles-mêmes, qui réclament du cobalt, du lithium, des métaux rares extraits dans des conditions qu'aucune plaquette commerciale ne montrera jamais. La révolution est propre sur le papier. Beaucoup moins dans la mine.
 
-## Qui paie, qui profite
+## Alors, une révolution pour qui ?
 
-L'IA creuse des écarts qui existaient déjà. D'un côté, les entreprises qui contrôlent l'infrastructure et fixent les prix. De l'autre, les freelances, les PME, les pays sans souveraineté numérique qui s'habituent à des outils dont ils ne maîtrisent ni le coût futur ni la disponibilité — et dont les données d'usage servent à entraîner les prochaines versions des modèles sur lesquels ils sont devenus dépendants.
+Qu'on soit clair : j'adore l'IA. Je l'utilise tous les jours, ça me fait gagner un temps fou, et je n'ai aucune envie de revenir en arrière. Si je prends la peine d'écrire tout ça, ce n'est pas par technophobie — c'est parce que je lis trop de bullshit. Ces CEO de LinkedIn qui profitent de la hype pour cracher leur venin sur tous les corps de métier qu'ils rêvaient de mépriser, ou qui n'y voient qu'une bonne excuse pour raboter au maximum la masse salariale. L'outil est génial. Ce qu'on en fait, et qui en décide, beaucoup moins évident.
 
-Les gains de productivité, quand ils existent, se concentrent dans les secteurs déjà privilégiés — finance, tech, marketing — pendant que la santé et l'éducation attendent. Et comme pour chaque vague d'automatisation précédente, l'efficacité dégagée profite aux actionnaires bien avant de profiter aux travailleurs, quand elle leur profite. Quant aux valorisations à vingt milliards de Mistral ou d'Anthropic : elles reposent sur des projections de revenus futurs, pas sur des bilans. Ce sont des paris, pas des entreprises rentables. Le marché le sait — et continue quand même.
+Parce que la vraie question n'est pas de savoir si la technologie est puissante — elle l'est. C'est de savoir qui en tiendra les clés, et combien il fera payer le passage.
 
-Des pistes existent : fonds publics pour des infrastructures de calcul européennes, exigences open-weight dans les marchés publics, transparence obligatoire sur les coûts réels d'inférence et l'empreinte carbone par requête. Elles sont discutées en marge des sommets officiels. Elles ne font pas la une — parce que personne dans la chaîne de valorisation n'a intérêt à ce qu'elles avancent vite.
+Pour l'instant, l'autoroute est construite. Les barrières sont posées. Et le prix du péage sera fixé par ceux qui en sont propriétaires — pas par ceux qui roulent dessus.
 
-## L'autoroute est construite
-
-Une poignée d'entreprises américaines contrôle désormais l'infrastructure cognitive sur laquelle s'appuient des États, des institutions et des entreprises du monde entier. La révolution promise est réelle — pour leurs portefeuilles. Pour le reste, les preuves restent à produire.
-
-L'autoroute est construite. Le prix du péage sera fixé par ceux qui en sont propriétaires.
+Reste une question, la seule qui vaille : sommes-nous en train de bâtir un outil pour tout le monde, ou la plus grosse machine à rente de l'histoire ?
 
 ---
 
-*Sources : Jim Covello, Global Head of Equity Research, Goldman Sachs (2024) — Vincent Schmalbach, "Anthropic is Preparing for IPO and We Should Be Worried" (Mai 2026)*
+*Sources : Jim Covello, responsable de la recherche actions, Goldman Sachs (2024) — Vincent Schmalbach, « Anthropic is Preparing for IPO and We Should Be Worried » (mai 2026) — Arcep, « IA générative : des défis pour l'avenir de l'internet ouvert » (janvier 2026)*
